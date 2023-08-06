@@ -15,9 +15,9 @@ query="""SHOW databases"""
 
 cursor.execute(query)
 
-result=cursor.fetchone()
+result=cursor.fetchall()
 
 for r in result:
 
-	print(r)
+	print(r[0])
 
