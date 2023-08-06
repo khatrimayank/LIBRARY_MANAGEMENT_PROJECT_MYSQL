@@ -21,3 +21,8 @@ for r in result:
 
 	print(r[0])
 
+conn.commit()
+
+cursor.close()
+
+conn.close()
