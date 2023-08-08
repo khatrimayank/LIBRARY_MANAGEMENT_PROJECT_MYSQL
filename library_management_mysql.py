@@ -1,4 +1,4 @@
-from flask import Flask,request,jsonify,redirect,url_for
+from flask import Flask,request,jsonify
 import mysql.connector
 
 app=Flask(__name__)
@@ -137,7 +137,7 @@ def book_get(id):
             return jsonify(book_with_id)
 
         else:
-            return "book of provided id {} doen't exist "
+            return "book of provided id {} doen't exist ".format(id)
 
 
 
